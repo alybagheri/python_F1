@@ -43,9 +43,11 @@ fruit_prices = {
 
 
 fruit_prices["banana"] = 1100
+fruit_prices["narengi"] = 300
 del fruit_prices["apple"]
 
 print(fruit_prices.keys())
+print(fruit_prices.items())
 
 
 
