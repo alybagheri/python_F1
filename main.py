@@ -1,3 +1,6 @@
+from itertools import count
+from operator import length_hint
+
 from encodings.aliases import aliases
 
 
@@ -37,5 +40,13 @@ age = 33
 
 print("hello {} {} you are age are {}".format(name, family_name, age))
 
+f"Hello {name} {family_name}, u are {age:1.1f} years old"
 
+print(len(family_name))
+print(name[-1])
 
+x = 'Hi this is a string'
+
+print(x.lower().replace(' ', ','))
+print(','.join(x.lower().split()))
+print(','.join(x.lower().split()))
