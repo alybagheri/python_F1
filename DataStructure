@@ -1,0 +1,46 @@
+Use a list when:
+
+"I have multiple items and I care about the collection/order of those items." ->
+
+servers = ["web-01", "web-02", "db-01", "redis-01"]
+
+ordered -> yes
+duplicates -> yes
+mutable -> yes
+access by -> index
+
+-------
+
+Use a tuple when:
+
+"These values belong together, and I don't want this collection modified."
+
+ordered -> yes
+duplicates -> yes
+mutable -> no
+access by -> index
+
+--------
+sets : "I only care whether something exists"
+
+    - No duplicates
+    - Sets are also great for membership
+
+ordered -> no*
+duplicates -> no
+mutable -> yes
+access by -> membership
+
+#------
+dictionary : "I want to associate a value with a name"
+
+ordered -> yes
+duplicates -> keys:no
+mutable -> yes
+access by -> key
+--------------------#data------------
+
+my_set = {"ali", "reza", "mehdi"}
+my_dict = {"name": "ali","family": "bagheri"}
+my_list = ["web-01","web-02","db-01"]
+server_address = ("192.168.1.10", 443)
